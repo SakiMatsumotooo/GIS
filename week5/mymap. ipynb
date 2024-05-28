@@ -1,5 +1,0 @@
-
-
-import folium 
-reitaku = [35.83315026365356, 139.95499297912522]
-m = folium.Map(location=reitaku, zoom_start15)

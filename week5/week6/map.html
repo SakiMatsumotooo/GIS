@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20e3c591c2979d190ef9f7ebeecbc624 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_20e3c591c2979d190ef9f7ebeecbc624" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_20e3c591c2979d190ef9f7ebeecbc624 = L.map(
+                "map_20e3c591c2979d190ef9f7ebeecbc624",
+                {
+                    center: [34.392827654, 132.46226698],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b07f758ee734b3464b98df37aed3c33c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u56fd\u571f\u5730\u7406\u9662", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b07f758ee734b3464b98df37aed3c33c.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var tile_layer_7da2ef2765605c8da448ec54b3ccb200 = L.tileLayer(
+                "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg",
+                {"attribution": "\u56fd\u571f\u5730\u7406\u9662", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7da2ef2765605c8da448ec54b3ccb200.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var tile_layer_ce4f5ef56891153d4bbe693aa7d08aa5 = L.tileLayer(
+                "https://cyberjapandata.gsi.go.jp/xyz/gazo4/{z}/{x}/{y}.jpg",
+                {"attribution": "\u56fd\u571f\u5730\u7406\u9662", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ce4f5ef56891153d4bbe693aa7d08aa5.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var tile_layer_547e5fa81e78ff457f7d2f1917314571 = L.tileLayer(
+                "https://cyberjapandata.gsi.go.jp/xyz/gazo3/{z}/{x}/{y}.jpg",
+                {"attribution": "\u56fd\u571f\u5730\u7406\u9662", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_547e5fa81e78ff457f7d2f1917314571.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var tile_layer_c9a5e92dcb0c972c52d1d52655f29274 = L.tileLayer(
+                "https://cyberjapandata.gsi.go.jp/xyz/gazo2/{z}/{x}/{y}.jpg",
+                {"attribution": "\u56fd\u571f\u5730\u7406\u9662", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c9a5e92dcb0c972c52d1d52655f29274.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var tile_layer_4737437bba6c92ce150a5c7421a80a4a = L.tileLayer(
+                "https://cyberjapandata.gsi.go.jp/xyz/gazo1/{z}/{x}/{y}.jpg",
+                {"attribution": "\u56fd\u571f\u5730\u7406\u9662", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4737437bba6c92ce150a5c7421a80a4a.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var tile_layer_24c1506827eb7490dd13605575f0263b = L.tileLayer(
+                "https://cyberjapandata.gsi.go.jp/xyz/ort_old10/{z}/{x}/{y}.png",
+                {"attribution": "\u56fd\u571f\u5730\u7406\u9662", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_24c1506827eb7490dd13605575f0263b.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var layer_control_77cd9a59c5bca01c5195997baf28a102_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b07f758ee734b3464b98df37aed3c33c,
+                    "2007\u5e74\u4ee5\u964d" : tile_layer_7da2ef2765605c8da448ec54b3ccb200,
+                    "1987\u5e74\uff5e1990\u5e74" : tile_layer_ce4f5ef56891153d4bbe693aa7d08aa5,
+                    "1984\u5e74\uff5e1986\u5e74" : tile_layer_547e5fa81e78ff457f7d2f1917314571,
+                    "1979\u5e74\uff5e1983\u5e74" : tile_layer_c9a5e92dcb0c972c52d1d52655f29274,
+                    "1974\u5e74\uff5e1978\u5e74" : tile_layer_4737437bba6c92ce150a5c7421a80a4a,
+                    "1961\u5e74\uff5e1969\u5e74" : tile_layer_24c1506827eb7490dd13605575f0263b,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_77cd9a59c5bca01c5195997baf28a102 = L.control.layers(
+                layer_control_77cd9a59c5bca01c5195997baf28a102_layers.base_layers,
+                layer_control_77cd9a59c5bca01c5195997baf28a102_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+
+        
+    
+            var marker_04282b3f79720477978e79d1665776b9 = L.marker(
+                [34.39284603, 132.4522656],
+                {}
+            ).addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var icon_5d48261e26557c38d352efdc3eb4429e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_04282b3f79720477978e79d1665776b9.setIcon(icon_5d48261e26557c38d352efdc3eb4429e);
+        
+    
+        var popup_6543eba44906a5e0251637bc68c0c267 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0405574aee58ab661a4dbc5e4c1ffcaf = $(`<div id="html_0405574aee58ab661a4dbc5e4c1ffcaf" style="width: 100.0%; height: 100.0%;"><div style="width:350px">行ってみたい観光スポット</div></div>`)[0];
+                popup_6543eba44906a5e0251637bc68c0c267.setContent(html_0405574aee58ab661a4dbc5e4c1ffcaf);
+            
+        
+
+        marker_04282b3f79720477978e79d1665776b9.bindPopup(popup_6543eba44906a5e0251637bc68c0c267)
+        ;
+
+        
+    
+    
+            marker_04282b3f79720477978e79d1665776b9.bindTooltip(
+                `<div>
+                     宮島
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3582a5bb02d2fdc3d13e92fb3605141a = L.marker(
+                [34.38911573, 132.4562155],
+                {}
+            ).addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var icon_b058577904ebe2e37ac093e054cdd639 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3582a5bb02d2fdc3d13e92fb3605141a.setIcon(icon_b058577904ebe2e37ac093e054cdd639);
+        
+    
+        var popup_11c64b40ade96ebf324838f0120007b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97419f6995f5df0417744c74062c340e = $(`<div id="html_97419f6995f5df0417744c74062c340e" style="width: 100.0%; height: 100.0%;"><div style="width:350px">Sakiが前泊するホテル</div></div>`)[0];
+                popup_11c64b40ade96ebf324838f0120007b4.setContent(html_97419f6995f5df0417744c74062c340e);
+            
+        
+
+        marker_3582a5bb02d2fdc3d13e92fb3605141a.bindPopup(popup_11c64b40ade96ebf324838f0120007b4)
+        ;
+
+        
+    
+    
+            marker_3582a5bb02d2fdc3d13e92fb3605141a.bindTooltip(
+                `<div>
+                     ホテルエスプル広島平和公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e80d5a47fdb92080230a82112641726 = L.marker(
+                [34.38626261, 132.4735821],
+                {}
+            ).addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var icon_dbdcdaf32929ee32de0072aa15db3ae9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2e80d5a47fdb92080230a82112641726.setIcon(icon_dbdcdaf32929ee32de0072aa15db3ae9);
+        
+    
+        var popup_d898c59e3ddedece58a8278b859d4c97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_058b8685f50903645d063eebd870f53b = $(`<div id="html_058b8685f50903645d063eebd870f53b" style="width: 100.0%; height: 100.0%;"><div style="width:350px">Saki,Misuzu,Riria,Karenが金曜日に行く場所</div></div>`)[0];
+                popup_d898c59e3ddedece58a8278b859d4c97.setContent(html_058b8685f50903645d063eebd870f53b);
+            
+        
+
+        marker_2e80d5a47fdb92080230a82112641726.bindPopup(popup_d898c59e3ddedece58a8278b859d4c97)
+        ;
+
+        
+    
+    
+            marker_2e80d5a47fdb92080230a82112641726.bindTooltip(
+                `<div>
+                     広島現代美術館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b26863d4d71a3a64b06c9febacca079 = L.marker(
+                [34.400276, 132.475669],
+                {}
+            ).addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var icon_cbed8d5f9e0919b667d73c80cb75ac43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6b26863d4d71a3a64b06c9febacca079.setIcon(icon_cbed8d5f9e0919b667d73c80cb75ac43);
+        
+    
+        var popup_7b042e08a268de7a0539e91ff03d2088 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f0c094c06671b320c2abb2f5942faed = $(`<div id="html_8f0c094c06671b320c2abb2f5942faed" style="width: 100.0%; height: 100.0%;"><div style="width:350px">前泊メンバーでインタビュー</div></div>`)[0];
+                popup_7b042e08a268de7a0539e91ff03d2088.setContent(html_8f0c094c06671b320c2abb2f5942faed);
+            
+        
+
+        marker_6b26863d4d71a3a64b06c9febacca079.bindPopup(popup_7b042e08a268de7a0539e91ff03d2088)
+        ;
+
+        
+    
+    
+            marker_6b26863d4d71a3a64b06c9febacca079.bindTooltip(
+                `<div>
+                     広島テレビ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d28a5a55a651b93669f46c2da151fcb = L.marker(
+                [34.3956379, 132.4536027],
+                {}
+            ).addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            var icon_bafdce807d71baf6a849d932fcb9ad10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1d28a5a55a651b93669f46c2da151fcb.setIcon(icon_bafdce807d71baf6a849d932fcb9ad10);
+        
+    
+        var popup_2bd45a19ede776e229ef6173ab12fc3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1b0aaa7af675e0950382a9b4bf86bd9 = $(`<div id="html_f1b0aaa7af675e0950382a9b4bf86bd9" style="width: 100.0%; height: 100.0%;"><div style="width:350px">資料館拝観、Dialogue</div></div>`)[0];
+                popup_2bd45a19ede776e229ef6173ab12fc3e.setContent(html_f1b0aaa7af675e0950382a9b4bf86bd9);
+            
+        
+
+        marker_1d28a5a55a651b93669f46c2da151fcb.bindPopup(popup_2bd45a19ede776e229ef6173ab12fc3e)
+        ;
+
+        
+    
+    
+            marker_1d28a5a55a651b93669f46c2da151fcb.bindTooltip(
+                `<div>
+                     原爆ドーム
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_b07f758ee734b3464b98df37aed3c33c.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            tile_layer_7da2ef2765605c8da448ec54b3ccb200.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            tile_layer_ce4f5ef56891153d4bbe693aa7d08aa5.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            tile_layer_547e5fa81e78ff457f7d2f1917314571.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            tile_layer_c9a5e92dcb0c972c52d1d52655f29274.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            tile_layer_4737437bba6c92ce150a5c7421a80a4a.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+    
+            tile_layer_24c1506827eb7490dd13605575f0263b.addTo(map_20e3c591c2979d190ef9f7ebeecbc624);
+        
+</script>
+</html>
